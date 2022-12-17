@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
+import Carrousel from './components/Carrousel/Carrousel';
 import { Inicio } from './paginas/Inicio';
 import Tienda from './paginas/Tienda';
 import Proveedores from './paginas/Proveedores';
@@ -13,6 +14,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
+      <Carrousel/>
       <Routes>
         <Route path='/' element={<Inicio />} />
         <Route path='/tienda' element={<Tienda />} />
